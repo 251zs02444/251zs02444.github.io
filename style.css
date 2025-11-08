@@ -1,0 +1,107 @@
+/* === 全体の設定 === */
+body {
+    font-family: "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
+    line-height: 1.7;
+    background-color: #fef9f8; /* ページ全体の背景 (ごく薄いピンク/ベージュ) */
+    color: #594a4e;             /* 基本の文字色 (濃いブラウン系) */
+    margin: 0;
+    padding: 0;
+}
+
+/* === ヘッダー === */
+header {
+    background-color: #a08497; /* ヘッダーの背景色 (くすんだラベンダー) */
+    color: #fdfdfd;             /* ヘッダーの文字色 (白系) */
+    padding: 20px 0;
+    text-align: center;
+    border-bottom: 5px solid #e895c1; /* アクセントのピンク */
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 15px;
+}
+
+header nav ul li {
+    display: inline-block;
+    margin: 0 20px;
+}
+
+header nav ul li a {
+    color: #fdfdfd;           /* リンクの文字色 (白系) */
+    text-decoration: none;
+    font-size: 1.1em;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+/* マウスが乗った時のリンク色 */
+header nav ul li a:hover {
+    color: #e895c1; /* アクセントのピンクに */
+}
+
+/* === メインコンテンツ === */
+main {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 30px;
+    background-color: #ffffff;  /* メイン部分の背景を白に */
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+/* === 各セクション共通 === */
+section {
+    margin-bottom: 40px;
+    padding-bottom: 30px;
+    border-bottom: 2px dashed #e0e0e0; /* 区切り線 (薄いグレー) */
+}
+
+section:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+}
+
+section h2 {
+    font-size: 2em;
+    color: #a08497; /* メインのラベンダー */
+    border-bottom: 3px solid #e895c1; /* アクセントのピンク */
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+/* === 作品紹介 (#works) === */
+#works article {
+    background-color: #fdfdfd;
+    padding: 20px;
+    border: 1px solid #f0f0f0; /* 枠線を薄く */
+    border-radius: 8px;
+    text-align: center;
+}
+
+#works h3 {
+    font-size: 1.5em;
+    margin-top: 0;
+    color: #594a4e; /* 文字色を統一 */
+}
+
+#works iframe {
+    border: 1px solid #e0e0e0; /* iframeの枠線 */
+    max-width: 100%;
+    border-radius: 5px;
+}
+
+/* === フッター === */
+footer {
+    text-align: center;
+    padding: 30px;
+    background-color: #a08497; /* ヘッダーと同じ背景色 */
+    color: #fdfdfd;             /* ヘッダーと同じ文字色 */
+    margin-top: 40px;
+}
